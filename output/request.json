@@ -1,0 +1,37 @@
+{
+  "message": [
+    {
+      "message": "你好,你是谁",
+      "roles": "1",
+      "uuid": "756eae9a-f933-4ab8-a2b5-44a4a760142c"
+    },
+    {
+      "message": "你好！我是 Claude，一个由 Anthropic 开发的 AI 助手。我可以用中文和你交流，也可以帮你解决编程相关的问题。有什么我可以帮你的吗？\n",
+      "roles": "2",
+      "uuid": "e9e297c3-7a0e-4d5f-bb96-917ed38d949b"
+    },
+    {
+      "message": "你好,你是谁",
+      "roles": "1",
+      "uuid": "756eae9a-f933-4ab8-a2b5-44a4a760142c"
+    }
+  ],
+  "unknown": {
+    "type": "Buffer",
+    "data": []
+  },
+  "paths": "/c:/Users/Test/.cursor-tutor",
+  "model": {
+    "model": "claude-3.5-sonnet",
+    "unknown": ""
+  },
+  "traceid": "e2501298-9221-4eb1-971c-ad65797060e4",
+  "uknown1": 0,
+  "uknown2": 0,
+  "uknown3": "c929448d-6425-49aa-b00b-6aed1ea76a82",
+  "uknown4": 1,
+  "uknown5": 0,
+  "uknown6": 0,
+  "uknown7": 0,
+  "uknown8": 0
+}

@@ -1,0 +1,38 @@
+syntax = "proto3";  // 使用Protobuf版本3
+
+package aiserver.v1;
+
+service AiService {
+  rpc StreamChat (Request) returns (Response);
+}
+
+message Request {
+  repeated Message message = 2; // 系统和用户的message
+  bytes unknown = 4; // 也许也为string，没内容，未知用处
+  string paths = 5; // 也许是本地运行的路径 examples 	/c:/Users/Test/.cursor-tutor
+  Model model = 7; // 模型
+  string traceid = 9; // 追踪id，x-amzn-trace-id:Root=这玩意 和 x-request-id
+  uint64 uknown1 = 13; // 也许常量0
+  uint64 uknown2 = 14; // 也许常量0
+  string uknown3 = 15; // 也许是常量，用来表示对话？9acff59a-35cc-4a1a-befb-7bcb43e69fac
+  uint64 uknown4 = 16; // 也许常量1
+  uint64 uknown5 = 22; // 也许常量0
+  uint64 uknown6 = 24; // 也许常量0
+  uint64 uknown7 = 28; // 也许常量0
+  uint64 uknown8 = 29; // 也许常量0
+}
+
+message Model {
+  string model = 1; // 模型 ep. claude-3.5-sonnet
+  bytes unknown = 4; // 也许也为string，没内容，未知用处
+}
+
+message Message {
+  string message = 1; // 发送的消息
+  uint64 roles = 2; // 返回1为user，2为system
+  string uuid = 13; // 也许是随机生成的一个uuid用于追踪？记得每一次的同一个对话的消息的uuid相同
+}
+
+message Response {
+  bytes Unknown = 1;
+}
