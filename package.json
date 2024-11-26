@@ -1,0 +1,16 @@
+{
+  "name": "Cursor-Test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "request_body_build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "protobufjs": "^7.4.0",
+    "undici": "^6.21.0",
+    "uuid": "^11.0.3"
+  }
+}
